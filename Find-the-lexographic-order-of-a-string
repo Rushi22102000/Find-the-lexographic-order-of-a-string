@@ -1,0 +1,19 @@
+package javaapplication1;
+import java.util.Scanner;
+public class JavaApplication1 {
+    public static void main(String[] args) {
+        String s1[]=new String[100];int cc=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a string to find it's lexographic order:");
+        String s=sc.nextLine();
+        System.out.print("Enter the lexographic order:");
+        int k=sc.nextInt();
+        for(int j=0;j<s.length()-k+1;j++)
+        {
+        
+            s1[j]=s.substring(j, j+k);
+            System.out.println(s1[j]);
+        }
+        }
+        
+    }    
